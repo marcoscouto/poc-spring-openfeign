@@ -5,4 +5,5 @@ feign:
         connectTimeout: 5000
         readTimeout: 5000
         loggerLevel: basic
-        requestInterceptors: com.marcoscouto.openfeign.InterceptorExample
+        requestInterceptors: com.marcoscouto.openfeign.interceptor.CustomInterceptor
+        errorDecoder: com.marcoscouto.openfeign.decoder.CustomErrorDecoder
